@@ -1,0 +1,3 @@
+JWT_SECRET = "super-secret-key"
+JWT_ALGORITHM = "HS256"
+JWT_EXPIRES_IN = 10

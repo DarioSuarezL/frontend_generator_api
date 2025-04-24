@@ -1,0 +1,28 @@
+# Python things
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.sqlite3
+*.db
+*.log
+*.pid
+*.tar
+.mypy_cache/
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
