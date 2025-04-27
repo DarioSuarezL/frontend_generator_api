@@ -15,9 +15,14 @@ class Meeting(models.Model):
     )
 
     design = fields.ForeignKeyField(
-        "models.Desing",
+        "models.Design",
         related_name="meeting",
         unique=True,
+    )
+
+    owner = fields.ForeignKeyField(
+        "models.User",
+        related_name="owned_meetings"
     )
 
     def __str__(self):
