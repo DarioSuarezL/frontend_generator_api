@@ -5,6 +5,7 @@ asyncpg==0.30.0
 bcrypt==4.3.0
 certifi==2025.1.31
 click==8.1.8
+distro==1.9.0
 dnspython==2.7.0
 ecdsa==0.19.1
 email_validator==2.2.0
@@ -17,9 +18,11 @@ httpx==0.28.1
 idna==3.10
 iso8601==2.1.0
 Jinja2==3.1.6
+jiter==0.9.0
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
+openai==1.76.2
 passlib==1.7.4
 pyasn1==0.4.8
 pydantic==2.11.3
@@ -39,6 +42,7 @@ six==1.17.0
 sniffio==1.3.1
 starlette==0.46.2
 tortoise-orm==0.25.0
+tqdm==4.67.1
 typer==0.15.2
 typing-inspection==0.4.0
 typing_extensions==4.13.2
