@@ -1,5 +1,6 @@
 # Python things
 .venv/
+.env
 __pycache__/
 **/__pycache__/
 *.py[cod]

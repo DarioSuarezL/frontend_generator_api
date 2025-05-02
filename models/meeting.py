@@ -7,23 +7,13 @@ class Meeting(models.Model):
     title = fields.CharField(max_length=255)
     created_at = fields.DatetimeField(auto_now_add=True)
     updated_at = fields.DatetimeField(auto_now=True)
+    design = fields.TextField(default="")
 
     users = fields.ManyToManyField(
-        "models.User",
-        related_name="meetings",
-        through="user_meeting"
+        "models.User", related_name="meetings", through="user_meeting"
     )
 
-    design = fields.ForeignKeyField(
-        "models.Design",
-        related_name="meeting",
-        unique=True,
-    )
-
-    owner = fields.ForeignKeyField(
-        "models.User",
-        related_name="owned_meetings"
-    )
+    owner = fields.ForeignKeyField("models.User", related_name="owned_meetings")
 
     def __str__(self):
         return self.title + " - " + self.id
